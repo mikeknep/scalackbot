@@ -23,7 +23,7 @@ class BotSpec extends FunSpec {
           |.build""".stripMargin shouldNot typeCheck
       }
 
-      it("with not compile without a name") {
+      it("will not compile without a name") {
         """val bot: Bot[Int] = Bot.builder()
           |.withToken("apiToken")
           |.withHandlers(List.empty)
